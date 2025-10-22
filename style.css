@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+}
+
+main .div-principal {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 20px;
+}
+
+main .div-principal h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main .div-principal h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+main .div-principal p {
+    margin-bottom: 10px;
+}
+
+main .div-principal h6 {
+    color: dimgray;
+    font-size: 20px;
+    font-weight: 300px;
+    margin-top: 30px;
+}
+
+main .div-principal h5 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.Imagem-cel-azul {
+    width: 500px;
+    margin-top: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.div-principal .opcoes-cores {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.div-principal .opcoes-cores .cor:hover {
+    transform: scale(1.15);
+    transform: transform 0.14s ease;
+}
+
+.div-principal .opcoes-cores .cor {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cor-amarelo {background-color: yellow;}
+.cor-azul {background-color: blue;}
+.cor-branco {background-color: white; border: 1px solid #ccc;}
+.cor-preto {background-color: black;}
+.cor-roxo {background-color: purple;}
+.cor-vermelho {background-color: red;}
+
+
+
+.div-principal .opcoes-cores input[type="radio"] {
+    display: none;
+}
+
+main .div-principal button {
+    background-color: blue;
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    border-radius: pointer;
+    margin-top: 20px;
+}

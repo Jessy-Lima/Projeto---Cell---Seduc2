@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Vendas de Celulares</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    
+    <main> <!-- Elemento semantico que indica o conteudo principal da pagina. 
+        Ajuda na acessibilidade e no SEO - coloque aqui o conteudo mais importante
+        Criar uma coluna de texto e botões:-->
+
+        <div class="div-principal"> <!-- div principal, conteiner que agrupa, titulo, descrição, preço, 
+            botão e ação, use classes para aplicar estilos via CSS-->
+
+            <h2> Iphone e Suas Versões </h2>
+            
+            <h3>O Atual celular da sua escolha <!-- Texto explicativo, pode ser lidos-->
+            Resistente de ver.</h3> 
+
+            <p>Em dois tamanhos perfeitos. <!--Paragrafo com descrição curta do produto-->
+            Agora com um toque de Amarelo
+            </p>
+
+            <h6> A partir de R$ 899,50/mês ou R$ 10.899*</h6>
+
+            <button>Comprar !</button>
+
+            <h5> Escolha a sua cor :</h5>
+
+            <!-- 
+            opcoes-cores:
+            Conteiner para opções de cor, Cada opção é um input + Label.
+            Os radios com mesmo name="cor" formam um grupo (apenas 1 pode ser selecionado).
+
+            input radio;
+
+            type = "radio" cria opção exclusiva;
+            name = "cor" agrupa as opções;
+            id = "amarelo" serve para associar o label;
+            onclick = chama a função Javascript trocarimagem(....) passando o nome do arquivo.
+            -->
+
+            <div class="Opcao-cores">
+
+                <input type="radio" name="cor" id="amarelo" onclick="trocarimagem('iphone-amarelo.png')" >
+                <label for="amarelo" class="cor cor-amarelo"></label>
+
+                <input type="radio" name="cor" id="azul" onclick="trocarimagem('iphone-azul.png')" >
+                <label for="azul" class="cor cor-azul"></label>
+
+                <input type="radio" name="cor" id="branco" onclick="trocarimagem('iphone-branco.png')" >
+                <label for="branco" class="cor cor-branco"></label>
+
+                <input type="radio" name="cor" id="preto" onclick="trocarimagem('iphone-preto.png')" >
+                <label for="preto" class="cor cor-preto"></label>
+
+                <input type="radio" name="cor" id="roxo" onclick="trocarimagem('iphone-roxo.png')" >
+                <label for="roxo" class="cor cor-roxo"></label>
+
+                <input type="radio" name="cor" id="vermelho" onclick="trocarimagem('iphone-vemelho.png')" >
+                <label for="vermelho" class="cor cor-vermelho"></label>
+
+            </div>
+
+        </div>
+
+        <!-- Imagem do celular -->
+        <img src="IMG/iphone-azul.png" id="iphone-img" class="Imagem-cel-azul"  alt="Imagem do iphone">
+
+    </main>
+
+    <!-- Script para trocar a imagem quando o usuario selecionar a cor. -->
+    <script>
+
+        /* trocarImagem(nomeImagem) 
+        1. Localiza o elemento <img> pelo id.
+        2. Definir um manipulador de erro (onerror) que coloca uma imagem de fallback caso a 
+        solicitada não exista.
+        3. Alterar o atributo src para o novo caminho da imagem.
+        */ 
+
+        function trocarimagem(nomeimagem){
+
+        var img = document.getElementById('iphone-img');
+
+        img.onerror = function(){
+
+            // Aqui udsmod 'this' que aponta para o proprio elemento umg.
+        this.src = './IMG/iphone-azul.png' 
+
+        };
+
+        img.src = './IMG/' + nomeimagem;
+
+    }
+    </script>
+
+</body>
+
+</html>
