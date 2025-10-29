@@ -123,3 +123,22 @@ main .div-principal h5 {
     margin-top: 20px;
   }
 }
+
+nav {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4; /* azul clarinho ao passar o mouse */
+}
