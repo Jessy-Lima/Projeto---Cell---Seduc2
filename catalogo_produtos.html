@@ -1,12 +1,94 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catálogo - SmartTech Celulares</title>
+    <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
-    <a href="pagina_inicial.html">Voltar para o Início</a>
+    <nav>
+        <a href="pagina_inicial.html">Início</a>
+        <a href="index.html">Oferta de iPhones</a>
+        <a href="contato_compra.html">Contato</a>
+    </nav>
+
+    <h1>Catálogo de Produtos</h1>
+    <p>Escolha uma categoria para ver nossos produtos:</p>
+
+    <!-- Filtros -->
+    <div class="filtros">
+        <input type="radio" id="todos" name="filtro" checked>
+        <label for="todos">Todos</label>
+
+        <input type="radio" id="celulares" name="filtro">
+        <label for="celulares">Celulares</label>
+
+        <input type="radio" id="notebooks" name="filtro">
+        <label for="notebooks">Notebooks</label>
+
+        <input type="radio" id="pcs" name="filtro">
+        <label for="pcs">PCs</label>
+
+        <input type="radio" id="tablets" name="filtro">
+        <label for="tablets">Tablets</label>
+    </div>
+
+    <!-- Produtos -->
+    <div class="produtos">
+        <!-- CELULARES -->
+        <div class="item celular">
+            <img src="IMG/iphone16.jpg" alt="iPhone 16 Pro Max">
+            <p>Apple iPhone 16 Pro Max</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="item celular">
+            <img src="IMG/Iphone15-Rosa.jpg" alt="iPhone 15 Rosa">
+            <p>Apple iPhone 15 Rosa</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- NOTEBOOKS -->
+        <div class="item notebook">
+            <img src="IMG/notebook-lenovo.jpg" alt="Notebook Lenovo">
+            <p>Notebook Lenovo Ideapad 3</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="item notebook">
+            <img src="IMG/notebook-acer.jpg" alt="Notebook Acer">
+            <p>Notebook Acer Aspire 5</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- PCS -->
+        <div class="item pc">
+            <img src="IMG/pc-gamer.jpg" alt="PC Gamer">
+            <p>PC Gamer RTX 4070</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="item pc">
+            <img src="IMG/pc-simples.jpg" alt="PC Escritório">
+            <p>PC Escritório Intel i5</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- TABLETS -->
+        <div class="item tablet">
+            <img src="IMG/tablet-samsung.jpg" alt="Tablet Samsung">
+            <p>Tablet Samsung Galaxy Tab S9</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="item tablet">
+            <img src="IMG/ipad-pro.jpg" alt="iPad Pro">
+            <p>Apple iPad Pro 12.9”</p>
+            <button>Comprar</button>
+        </div>
+    </div>
+
 </body>
 </html>

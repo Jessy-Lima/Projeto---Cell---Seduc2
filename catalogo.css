@@ -1,0 +1,79 @@
+/* FILTROS */
+.filtros {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Esconde os botões do tipo radio */
+.filtros input {
+    display: none;
+}
+
+/* Estilo dos botões de filtro */
+.filtros label {
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.filtros label:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+/* PRODUTOS */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.item button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item button:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+/* FILTRO CSS PURO (mágica aqui ✨) */
+#celulares:checked ~ .produtos .item:not(.celular),
+#notebooks:checked ~ .produtos .item:not(.notebook),
+#pcs:checked ~ .produtos .item:not(.pc),
+#tablets:checked ~ .produtos .item:not(.tablet) {
+    display: none;
+}
