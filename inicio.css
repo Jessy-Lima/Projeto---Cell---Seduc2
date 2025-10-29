@@ -1,0 +1,109 @@
+/* Reset básico para remover margens e padronizar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background-color: #f2f4f7; /* cor de fundo leve */
+    color: #333;
+    text-align: center;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4; /* azul clarinho ao passar o mouse */
+}
+
+/* Títulos */
+h1 {
+    margin-top: 30px;
+    font-size: 2.2em;
+    color: #111;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Imagem principal */
+.imagem-centralizada {
+    width: 100%;            
+    height: auto;           
+    opacity: 0.6;           
+    display: block;
+    margin: 20px 0;
+}
+
+
+/* Container dos produtos */
+.conteiner-imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+/* Cartão de produto */
+.conteiner-imagens div {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.conteiner-imagens div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Imagens dos produtos */
+.conteiner-imagens img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Texto dos produtos */
+.conteiner-imagens p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Botão */
+button {
+    background-color: #2725af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3bbb42;
+    transform: scale(1.05);
+}
